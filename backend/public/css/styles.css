@@ -24,7 +24,7 @@
     font-style: normal;
 }
   
-    
+/*Declaracion de variables para las diversas clases*/
 
 :root{
     --header-bgc: #151419;
@@ -35,7 +35,20 @@
 
     --btn-link-color: #151419;
     --btn-link-bgc: #fff;
+
+    --footer-background-color: #151419;
+    --footer-elements-color: white;
+    --copyrights-color: #4C4C50;
+    --copyrights-border-top-color: #2A292E;
+    --footer-info-color: #57575A;
+    --footer-icons-color: #A4A4A6;
+    --footer-icons-border-color: #A4A4A6;
+    --footer-icons-color-hover: white;
+    --footer-icons-border-color-hover: white;
+    --footer-link-color-hover: white;
 }
+
+/*Estilos aplicados al header*/
 
 .header { 
     background-color: var(--header-bgc);
@@ -108,4 +121,40 @@
 
 .cont-btn .person{
     margin-left: 15px;
+}
+
+/*Estilos aplicados al footer*/
+
+.footer {
+    background-color: var(--footer-background-color);
+    color: var(--footer-elements-color)
+}
+
+.icons{
+    color: var(--footer-icons-color);
+    border: 1px solid var(--footer-icons-border-color);
+    transition: color 1.9s, border 1.9s;
+}
+
+.icons:hover {
+    color: var(--footer-icons-color-hover);
+    border: 1px solid var(--footer-icons-border-color-hover);
+}
+
+.copyrights {
+    color: var(--copyrights-color);
+    border-top: 3px solid var(--copyrights-border-top-color);
+}
+
+.footer-link, .footer-info {
+    color: var(--footer-info-color);
+}
+
+.footer-link {
+    cursor: pointer;
+    transition: color 1.9s
+}
+
+.footer-link:hover{
+    color: var(--footer-link-color-hover);
 }
