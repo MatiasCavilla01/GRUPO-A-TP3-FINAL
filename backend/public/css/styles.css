@@ -36,12 +36,14 @@
 :root{
     --header-bgc: #151419;
     --header-color: #fff;
-    --header-border-btm-color: #fff;
+    --header-border-btm-color: #5D5D61;
 
     --nav-link-color: white;
+    --nav-link-hover-border-color: #403F44;
 
     --btn-link-color: #151419;
     --btn-link-bgc: #fff;
+    --search-form-border-color: #403F44;
 
     --primary-font: "Qwigley", cursive;
     --secondary-font: "Viaoda Libre", serif;
@@ -49,6 +51,8 @@
     --color-1: #151419;
     --color-2: #ddc8a9;
     --color-3: #6e6264;
+
+    --slider-bgcolor: #0C0807;
 
 
     --footer-background-color: #151419;
@@ -78,30 +82,19 @@
     border: none;
     cursor: pointer;
     color: var(--nav-link-color);
+    transition: border 1.9s;
 }
 
 .nav-link:hover {
-    border: 1.5px solid var(--secondary-color);
+    border: 1.5px solid var(--nav-link-hover-border-color);
 }
 
 .titulo{
     font-size: 50px;
 }
 
-.btn-link{
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
-    transition: all 1.5s ease;
-}
-
-.btn-link:hover {
-    color: var(--btn-link-bgc);
-    background-color: var(--btn-link-color);
-}
-
 .search-form{
-    border: 1.5px solid var(--secondary-color);
+    border: 1.5px solid var(--search-form-border-color);
 }
 
 .search-form input{
@@ -124,7 +117,7 @@
     border-radius: 50%;
     padding: 12px;
     box-shadow: 0px 5px 10px rgb(0, 0, 0, .35);
-    transition: .3s ease;
+    transition: 1.9s ease;
 }
 
 .cont-btn i:hover{
@@ -262,6 +255,44 @@
     height: 60px;
 }
 
+.slider {
+    width: 100vw;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    background-color: var(--slider-bgcolor);
+    border-top: 1px solid var(--header-border-btm-color);
+    border-bottom: 1px solid var(--header-border-btm-color);
+}
+
+.slider .slide-track {
+    display: flex;
+    animation: scroll 70s linear infinite;
+    -webkit-animation: scroll 70s linear infinite;
+    width: calc(200px * 16);
+}
+
+.slider .slide {
+    width: 300px;
+}
+
+.slider .slide img {
+    width: 100%;
+    height: 200px;
+    padding: 0px 25px;
+    object-fit: contain;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(calc(-200px * 8));
+        transform: translateX(calc(-200px * 8));
+    }
+}
 
 
 /*************/
