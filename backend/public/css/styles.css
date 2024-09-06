@@ -35,6 +35,7 @@
 
 :root{
     --header-bgc: #151419;
+    --secondary-color: #848494;
     --header-color: #fff;
     --header-border-btm-color: #5D5D61;
 
@@ -53,6 +54,8 @@
     --color-3: #6e6264;
 
     --slider-bgcolor: #0C0807;
+    --bg-color-offers: #303039;
+
 
     --testimonials-bgc: #5A596B;
     --testimonials-btn-border-color: white;
@@ -350,6 +353,220 @@
     height: 80px;
     border-radius: 100%;
 }
+
+
+/*************/
+/*  OFERTAS  */
+/*************/
+/*Aplicacion de estilos a la seccion de Ofertas*/
+.offers{
+    background-color: var(--bg-color-offers);
+    color: white;
+    padding-bottom: 90px;
+}
+
+.offers .titulo-1{
+    font-family: var(--primary-font);
+    font-size: 40px;
+    padding-top: 60px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.offers .titulo-2{
+    font-family: var(--secondary-font);
+    text-align: center;
+    height: 40px;
+}
+
+.container-offers{
+    margin-left: 80px;
+    display: flex;
+}
+
+.cont-1-offers{
+    font-family: var(--terciary-font);
+    font-size: 14px;
+    margin-top: 120px;
+    width: 500px;
+    margin-right: 70px;
+}
+
+.cont-1-offers p{
+    margin-bottom: 40px;
+}
+
+.cont-1-offers .sub-cont-1{
+    border: 1px solid white;
+    border-radius: 12px;
+    width: 180px;
+    padding: 15px 0;
+    height: 135px;
+}
+
+.cont-1-offers .sub-cont-1 p{
+    font-family: var(--primary-font);
+    font-size: 35px;
+    margin-left: 30px;
+    margin-bottom: 0;
+    height: 35px;
+}
+
+
+.cont-1-offers .sub-cont-1 h1{
+    font-family: var(--secondary-font);
+    margin-left: 30px;
+    font-size: 60px;
+}
+
+.cont-cards .custom-card-1{
+    font-family: var(--terciary-font);
+    color: white;
+    width: 300px;
+    border: 1px;
+    border-radius: 15px;
+    margin-top: 170px;
+}
+
+.cont-cards .custom-card-1 .card-img{
+    border-radius: 15px;
+}
+
+.cont-cards .custom-card-1 .cont-title p{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.cont-cards .custom-card-1 .button-1{
+    font-size: 14px;
+    border: 1.5px solid white;
+    color: white;
+    background-color: transparent;
+    padding: 5px 15px;
+    border-radius: 25px;
+    height: 40px;
+    margin-left: 40px;
+    transition: background-color 1s, color 1s;
+}
+
+.cont-cards .custom-card-1 .button-1:hover{   
+    background-color: #ecf0f1;
+    color: #808b96;
+}
+
+.cont-cards .custom-card-1 .button-2{
+    padding: 10px 15px;
+    border: 1px;
+    background-color: white;
+    border-radius: 25px;
+    font-size: 14px;
+    margin-top: 95px;
+    margin-left: 145px;
+    transition: background-color 1s;
+}
+
+.cont-cards .custom-card-1 .button-2:hover{
+    background-color: #bdc3c7;
+}
+
+.cont-cards .custom-card-2{
+    font-family: var(--terciary-font);
+    width: 250px;
+    height: 300px;
+    border-radius: 15px;
+    border: 1px;
+    margin-top: 80px;
+    margin-left: 0;
+}
+
+.cont-cards .custom-card-2 .card-img{
+    height: 300px;
+    border-radius: 15px;
+}
+
+.cont-cards .custom-card-2 .cont-title p{
+    color: black;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.cont-cards .custom-card-2 .cont-title .button-1{
+    border: 1.5px solid black;
+    border-radius: 25px;
+    background-color: transparent;
+    color: black;
+    padding: 5px 10px;
+    margin-left: 25px;
+    transition: background-color 1s;
+}
+
+.cont-cards .custom-card-2 .cont-title .button-1:hover{
+    background-color: #d7dbdd;
+}
+
+.cont-cards .custom-card-2 .button-2{
+    padding: 10px 15px;
+    border: 1px;
+    background-color: white;
+    border: 1px solid #808b96;
+    border-radius: 25px;
+    font-size: 14px;
+    margin-top: 170px;
+    margin-left: 90px;
+    transition: background-color 1s;
+}
+
+.cont-cards .custom-card-2 .button-2:hover{
+    background-color: #bdc3c7;
+}
+
+
+.cont-cards .custom-card-3{
+    font-family: var(--terciary-font);
+    color: white;
+    border: 1px;
+    border-radius: 15px;
+    width: 280px;
+    height: 210px;
+}
+
+.cont-cards .custom-card-3 .card-img{
+    width: 280px;
+    border-radius: 15px;
+}
+
+.cont-cards .custom-card-3 .cont-title p{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.cont-cards .custom-card-3 .cont-title h2{
+    font-family: var(--logo-font);
+    font-size: 50px;
+}
+
+.cont-cards .custom-card-3 .sub-cont{
+    margin-top: 30px;
+}
+.cont-cards .custom-card-3 .sub-cont button{
+    padding: 5px 10px;
+    border: 1.5px solid white;
+    color: white;
+    border-radius: 50%;
+    background-color: transparent;
+    margin-right: 12px;
+    transition: background-color 1s, color 1s;
+}
+
+.cont-cards .custom-card-3 .sub-cont button:hover{
+    background-color: #ecf0f1;
+    color: #808b96;
+}
+
+.cont-cards .custom-card-3 .sub-cont p{
+    font-size: 15px;
+}
+
 
 /*************/
 /*   FOOTER  */
