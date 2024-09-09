@@ -523,6 +523,60 @@
 }
 
 
+/**************/
+/* Our Collection */
+/**************/
+/*Aplicacion de estilos a la seccion Our Collection*/
+
+.btn-collection-grid-container{
+    width: 40px;
+    height: 40px;
+    background-color: white;
+}
+
+.btn-open-store{
+    background-color: #DDC8A9;
+    transition: color 1.7s, background-color 1.7s;
+}
+
+.btn-open-store:hover{
+    background-color: #6e6264;
+    color: #DDC8A9;
+}
+
+.heart-icon{
+    transition: color 1.7s, background-color 1.7s;
+}
+
+.heart-icon:hover{
+    color: white;
+    background-color: black;
+}
+
+.perfume-custom{
+    height: 250px;
+}
+
+.link-collection-custom{
+    text-decoration: none;
+    color: black;
+    transition: color 1.7s, background-color 1.7s;
+}
+
+.link-collection-custom:hover{
+    color: white;
+    background-color: black;
+}
+
+.cart-collection-custom{
+    color: black;
+    transition: color 1.7s, background-color 1.7s;
+}
+
+.cart-collection-custom:hover{
+    color: white;
+    background-color: black;
+}
 
 /**************/
 /* PROMOTIONS */
